@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+  }
+  ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  li{
+    color: white;
+   }
+
+   .container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    
+  }
+
+   html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+  
+  .logo{
+    height: 50%;
+    width: 50%;
+  }
+  h1 {
+    color: #222;
+  }
+  h2 {
+    color: #222;
+  }
+  h3 {
+    color:#222;
+  }
+  
+  h4 {
+    color: #222;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+  }
+  .section-p1 {
+    padding: 10px 40px;
+  }
+  #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  #navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.5s ease;
+}
+ 
+
+  button.normal{
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#b0e4be;
+    border-radius: 5px; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    display: flex;
+  }
+  
+  .normal a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.5s ease;
+  }
+  button.normal:hover{
+    font-size: 24px;
+    background-color: rgb(126, 226, 101);
+  
+  }
+  body { 
+    width: 100%;
+  }
+  #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:#b0e4be;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    position:sticky;
+}  
+#second-header{
+  color: white;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background:#70a17d;
+  box-shadow: 0 5px 15px rgba(230, 221, 221, 0.06);
+  z-index: 999;
+  top: 0;
+  left: 0;
+  position:sticky;
+}  
+
+
+#text-contain{
+  background:rgba(0, 0, 0, 0.5);
+  color: white;
+  width:800px;
+  align-self: center;
+  
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #088178;
+}
+.navbar li a.active::after,
+.navbar li a:hover::after {
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#navbar-specific{
+  margin: 15px;
+  
+  transform: translateX(-55px);
+
+  
+  
+}
+#navbar-specific li a{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(85, 38, 38);
+  transition: 0.5s ease;
+}
+
+#mobile{
+ display: none;
+ align-items: center;
+
+}
+
+#close{
+  display:none;
+}
+.textruta {
+  position: relative; /* Change from absolute to relative */
+  left: 50%;
+  transform: translateX(-50%); /* Simplified margin-left */
+  padding-top: 70px;
+  word-wrap: break-word;
+  width: 900px; /* Add margin bottom to create space for footer */
+}
+#omskolan{
+  width: 570px;
+  transform: translateX(+170px);
+}
+#bibliotek{
+  width: 400px;
+  transform: translateX(+200px);
+}
+#skörd{
+  width: 300px;
+  transform: translateX(+300px);
+}
+#filosof{
+  width: 350px;
+  transform: translateX(+270px);
+}
+#filosof2{
+  width: 300px;
+  transform: translateX(+300px);
+}
+#artikeln{
+  width: 300px;
+  transform: translateX(+250px);
+}
+.textruta .normal{
+
+  transform: translateX(300px);
+}
+#hattar{
+
+  width: 350px;
+  transform: translateX(+250px);
+  
+}
+
+#städdag{
+  width: 350px;
+  transform: translateX(+210px);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #cfddea;
+  position: relative; /* Ensure footer stays at bottom of textruta */
+  top: 20px; /* Adjust top position as needed */
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+footer .logo{
+  margin-bottom: 30px;
+}
+
+footer h4{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p{
+  font-size:13px;
+  margin: 0 0 8px 0;
+}
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin: 10px;
+}
+
+footer .follow{
+  margin-top: 20px; 
+}
+
+footer .follow i{
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row img{
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .install img{
+  margin: 10px 0 15px;
+}
+
+.section-p1 {
+  padding: 10px 40px;
+}
+.icon-container {
+  width: 30px; /* Adjust to your desired width */
+  height: 30px; /* Adjust to your desired height */
+  display: inline-block; /* Or use "block" if you want them on separate lines */
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+#facebook{
+  width:30px;
+}
+#instagram{
+  width: 50px;
+}
+@media (max-width:1100px){
+ 
+  .textruta {
+    width: 700px;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  #omskolan{
+    width: 520px;
+    transform: translateX(90px);
+  }
+  #bibliotek{
+    width: 300px;
+    transform: translateX(+120px);
+  }
+  #skörd{
+    width: 300px;
+    transform: translateX(+200px);
+  }
+  #filosof{
+    width: 350px;
+    transform: translateX(+170px);
+  }
+  #filosof2{
+    width: 300px;
+    transform: translateX(+200px);
+  }
+  #artikeln{
+    width: 300px;
+    transform: translateX(+250px);
+  }
+  .textruta .normal{
+  
+    transform: translateX(300px);
+  }
+  #hattar{
+  
+    width: 350px;
+    transform: translateX(+250px);
+    
+  }
+  
+  #städdag{
+    width: 350px;
+    transform: translateX(+210px);
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+}
+  
+}
+@media (max-width:700px){
+  .textruta {
+    width: 360px;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  #filosof{
+    width: 300px;
+    transform: translateX(+20px);
+  }
+  #omskolan{
+    width: 300px;
+    transform: translateX(30px);
+  }
+  #skörd{
+    width: 200px;
+    transform: translateX(+80px);
+  }
+  #bibliotek{
+    width: 250px;
+    transform: translateX(+40px);
+  }
+  #artikeln{
+    width: 200px;
+    transform: translateX(+70px);
+  }
+  #hattar{
+  
+    width: 250px;
+    transform: translateX(+50px);
+    
+  }
+  #filosof2{
+    width: 250px;
+    transform: translateX(+0px);
+  }
+  #städdag{
+    width: 250px;
+    transform: translateX(+60px);
+  }
+}
+@media (max-height: 940px){
+
+  #filosof2{
+    width: 200px;
+    transform: translateX(+0px);
+  }
+  #filosof{
+    width: 300px;
+    transform: translateX(+0px);
+  }
+  #omskolan{
+    width: 250px;
+    transform: translateX(0px);
+  }
+  #skörd{
+    width: 160px;
+    transform: translateX(+0px);
+  }
+}
+@media (max-height: 880px){
+
+  #filosof2{
+    width: 200px;
+    transform: translateX(+0px);
+  }
+  #filosof{
+    width: 200px;
+    transform: translateX(+0px);
+  }
+  #omskolan{
+    width: 230px;
+    transform: translateX(0px);
+  }
+  #skörd{
+    width: 130px;
+    transform: translateX(+0px);
+  }
+}
+@media (max-height: 800px){
+
+  #filosof2{
+    width: 200px;
+    transform: translateX(+0px);
+  }
+  #filosof{
+    width: 120px;
+    transform: translateX(+0px);
+  }
+  #omskolan{
+    width: 210px;
+    transform: translateX(0px);
+  }
+  #skörd{
+    width: 0px;
+    transform: translateX(+0px);
+  }
+}
